@@ -5,7 +5,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge)
 ![PostgreSQL](https://img.shields.io/badge/Postgres-8.0-7AADFF?style=for-the-badge)
 
-# Sobre ✨
+## Sobre ✨
 O objetivo deste teste foi criar uma API voltada para um **"Log de Performance"** para registrar tarefas e entender o **estado de fluxo** do desenvolvedor ou estudante durante suas atividades.
 
 <br>
@@ -40,10 +40,30 @@ O objetivo deste teste foi criar uma API voltada para um **"Log de Performance"*
 
 <br/>
 
-# Estrutura do Projeto 🧬
+## Arquitetura ⚒️
+
+A aplicação segue uma arquitetura em camadas:
+
+- Controllers → responsabilidade das rotas
+- Models → camada de persistência (SQLAlchemy)
+- Schemas → validação e serialização de dados
+- Config → gerenciamento de ambiente
+
+</br>
+
+## Decisões Técnicas 🧠
+
+- Utilização de Flask com arquitetura em camadas (controllers, models, schemas)
+- Uso de SQLAlchemy como ORM para abstração do banco de dados
+- Flask-Migrate para controle de versionamento do schema do banco
+- Docker para garantir consistência entre ambientes
+
+</br>
+
+## Estrutura do Projeto 🧬
 
 ```
-project-root/
+root/
 ├── app/
 │   ├── controllers/
 │   │   ├── __init__.py
@@ -76,7 +96,7 @@ project-root/
 
 </br>
 
-# Autora 🌸
+## Autora 🌸
 **Lívia Silva**<br/>
 Backend Developer
 
