@@ -62,6 +62,8 @@ A aplicação segue uma arquitetura em camadas:
 
 ```
 root/
+├── ai/
+│   ├── README.md/
 ├── app/
 │   ├── controllers/
 │   │   ├── __init__.py
@@ -100,3 +102,10 @@ Backend Developer
 
 - GitHub: https://github.com/liviadfsilva 
 - LinkedIn: https://linkedin.com/in/liviadfsilva
+
+</br>
+
+## 📁 Pasta de transparência de IA
+
+Para manter transparência conforme solicitado no desafio técnico, toda a utilização de IA foi documentada em uma pasta dedicada dentro do repositório.
+A IA foi utilizada como ferramenta de apoio, e todo o código gerado foi revisado e adaptado manualmente.
