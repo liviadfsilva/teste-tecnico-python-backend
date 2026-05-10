@@ -24,18 +24,20 @@ def diagnostico_produtividade():
     if media_foco < 3:
         feedback = (
             "Seu nível de foco está baixo. "
-            "Tente reduzir notificações e fazer pausas estratégicas."
+            "Comece separando um tempo curto para concentração e vá aumentando aos poucos."
         )
 
     elif media_foco < 4:
         feedback = (
-            "Você está mantendo uma produtividade consistente, "
-            "mas ainda há espaço para melhorar seu estado de flow."
+            "Você está mantendo uma produtividade consistente. "
+            "Mantenha esse ritmo e lembre-se de fazer pausas entre as sessões. "
+            "Isso também ajuda na produtividade."
         )
 
     else:
         feedback = (
-            "Você está em uma maratona produtiva de alto nível 🚀"
+            "Parabéns! Você está numa maratona produtiva de alto nível. "
+            "Continue assim! Seus esforços serão recompensados."
         )
 
     return jsonify({
