@@ -1,50 +1,84 @@
 # 🚀 Desafio Técnico: API de Foco e Produtividade
 
-O objetivo deste teste é criar o backend de um **"Log de Performance"**. Em vez de apenas registrar tarefas, queremos entender o **estado de fluxo** do desenvolvedor ou estudante durante suas atividades.
+![Python](https://img.shields.io/badge/Python-3.13.2-yellow?style=for-the-badge)
+![Flask](https://img.shields.io/badge/Flask-3.1.1-white?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge)
+![PostgreSQL](https://img.shields.io/badge/Postgres-8.0-7AADFF?style=for-the-badge)
 
-## 📅 Regras de Entrega
+# Sobre ✨
+O objetivo deste teste foi criar uma API voltada para um **"Log de Performance"** para registrar tarefas e entender o **estado de fluxo** do desenvolvedor ou estudante durante suas atividades.
 
-* Prazo: O projeto deve ser entregue até a próxima segunda-feira.
-* Uso de IA: O uso de ferramentas de Inteligência Artificial (ChatGPT, GitHub Copilot, etc.) é permitido.
-* Transparência: Caso utilize IA, você deve commitar os artefatos gerados junto ao repositório. Queremos entender como você utiliza essas ferramentas para acelerar seu fluxo de trabalho.
-* Faça o **fork desse projeto** e me avise quando terminar o [wouerner](https://www.linkedin.com/in/wouerner/) no linkedin. (necessario para pode acompanhar pelo github quem participou)
+<br>
 
-## 📝 O Contexto
-Muitas vezes trabalhamos muito, mas produzimos pouco. Você deve construir uma API simples que ajude o usuário a registrar seu nível de produtividade e, ao final, entregue um **diagnóstico inteligente** de como foi o seu período de trabalho.
+## Instalação 💻
 
-## 🛠 Requisitos Técnicos
-*   **Linguagem:** Python 3.x.
-*   **Framework:** À sua escolha (FastAPI, Flask, Django, etc).
-*   **Armazenamento:** Pode ser em memória (dicionários/listas) ou SQLite para simplicidade.
-*   **Diferencial:** Código limpo, bem comentado e presença de um `README.md` explicando como rodar o projeto.
+1. **Clone o repositório:**
 
----
+   ```sh
+   git clone https://github.com/liviadfsilva/BookReviewBlogAPI.git
+   cd BookReviewBlogAPI
+   ```
 
-## 🛣 Os Endpoints
+2. **Copie o .env.example file para .env e mude as variáveis de ambiente se necessário:**
 
-### 1. `POST /registro-foco`
-O usuário deve enviar os dados de um bloco de trabalho recém-encerrado.
+   ```sh
+   cp .env.example .env
+   ```
 
-**Campos obrigatórios:**
-*   `nivel_foco`: Um valor inteiro de **1 a 5** (onde 1 é "muito distraído" e 5 é "estado de flow").
-*   `tempo_minutos`: Um inteiro representando quanto tempo durou a sessão.
-*   `comentario`: Uma string descrevendo o que foi feito ou o que causou distração.
+3. **Build and start the application and database with Docker**
 
-> **💡 Dica de Criatividade:** Sinta-se à vontade para adicionar campos extras, como `categoria` (coding, reunião, estudo), `data` ou `tags`.
+   ```bash
+    docker compose up --build
+   ```
+<br/>
 
-### 2. `GET /diagnostico-produtividade`
-Este endpoint deve retornar um resumo inteligente baseado em todos os registros salvos.
+#### A aplicação está disponível em:
+꩜ **http://localhost:5001**
 
-**O que deve retornar (JSON):**
-*   **Média do nível de foco:** A média aritmética de todos os registros.
-*   **Tempo total focado:** A soma de todos os minutos registrados.
-*   **Lógica Criativa (Diferencial):** Uma "mensagem de feedback" automática baseada nos dados analisados.
-    *   *Exemplo:* Se a média de foco for `< 3`, sugerir "Pausas mais longas e menos notificações". Se for `> 4`, "Você está em uma maratona produtiva de alto nível!".
+#### Access the Swagger documentation:
+📜 **http://localhost:5001/docs/#/**
 
----
+<br/>
 
-## 📊 O que será avaliado
-1.  **Organização do Código:** Estrutura de pastas e legibilidade.
-2.  **Manipulação de Dados:** Como você lida com tipos, cálculos e persistência.
-3.  **Tratamento de Erros:** Respostas adequadas para entradas inválidas (ex: nível de foco fora do range 1-5).
-4.  **Criatividade:** Pequenos detalhes que tornam a API mais útil para o usuário final.
+# Estrutura do Projeto 🧬
+
+```
+project-root/
+├── app/
+│   ├── controllers/
+│   │   ├── __init__.py
+│   │   ├── registro.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   ├── db.py
+│   │   ├── registro.py
+│   │
+│   ├── schemas/
+│   │   ├── __init__.py
+│   │   ├── registro_schema.py
+│   │
+│   │
+│   ├── __init__.py
+│
+├── migrations/
+│
+├── .env.example
+├── .gitignore
+├── config.py
+├── docker-compose.yml
+├── Dockerfile
+├── main.py
+└── requirements.txt
+
+```
+
+</br>
+
+# Autora 🌸
+**Lívia Silva**<br/>
+Backend Developer
+
+- GitHub: https://github.com/liviadfsilva 
+- LinkedIn: https://linkedin.com/in/liviadfsilva
