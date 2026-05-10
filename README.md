@@ -1,9 +1,9 @@
 # 🚀 Desafio Técnico: API de Foco e Produtividade
 
-![Python](https://img.shields.io/badge/Python-3.13.2-yellow?style=for-the-badge)
-![Flask](https://img.shields.io/badge/Flask-3.1.1-white?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.12.13-yellow?style=for-the-badge)
+![Flask](https://img.shields.io/badge/Flask-3.1.3-white?style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge)
-![PostgreSQL](https://img.shields.io/badge/Postgres-8.0-7AADFF?style=for-the-badge)
+![PostgreSQL](https://img.shields.io/badge/Postgres-16-7AADFF?style=for-the-badge)
 
 ## Sobre ✨
 
