@@ -6,7 +6,8 @@
 ![PostgreSQL](https://img.shields.io/badge/Postgres-8.0-7AADFF?style=for-the-badge)
 
 ## Sobre ✨
-O objetivo deste teste foi criar uma API voltada para um **"Log de Performance"** para registrar tarefas e entender o **estado de fluxo** do desenvolvedor ou estudante durante suas atividades.
+
+A Log de Foco API é uma API backend para registro de sessões de produtividade, permitindo armazenar métricas como nível de foco, duração e contexto da atividade. Com base nesses dados, a aplicação gera feedbacks simples para ajudar na análise de padrões de concentração ao longo do tempo.
 
 <br>
 
@@ -32,11 +33,8 @@ O objetivo deste teste foi criar uma API voltada para um **"Log de Performance"*
    ```
 <br/>
 
-#### A aplicação está disponível em:
+#### A aplicação estará disponível em:
 ꩜ **http://localhost:5001**
-
-#### Access the Swagger documentation:
-📜 **http://localhost:5001/docs/#/**
 
 <br/>
 
